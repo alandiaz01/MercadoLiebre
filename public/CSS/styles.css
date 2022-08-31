@@ -1,0 +1,470 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+/* MAIN BODY */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+/* HEADER */
+
+.header-home{
+    background-color: #EAC926;
+    padding: 1%;
+}
+
+.top-header{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    padding-top: 20px;
+}
+
+header div.logo{
+    padding: 10px;
+    width: 30%;
+}
+
+#buyslogan {
+    font-size: 12px;
+    text-align: justify;
+}
+
+/* SEARCH-BAR*/
+
+#searchtext {
+    position:relative;
+}
+
+#iconglass {
+    position: relative;
+    right: 20px;
+    font-size: smaller;
+}
+
+/* NAVBAR LEFT AND RIGHT */
+
+header nav .left-navbar{
+    font-size: 12px;
+    margin-left: 20px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    padding-right: 20px
+}
+
+header nav .right-navbar{
+    font-size: 12px;
+    margin-left: 20px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    padding-right: 20px;
+}
+
+nav .right-navbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .right-navbar li{
+   padding-right: 20px;
+}
+
+nav .left-navbar li{
+    padding-right: 20px
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* BURGER MENU */ 
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu #iconburger{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+} 
+
+/* BANNER*/
+
+section.banner img{
+    width: 100%;
+}
+
+/* ARTICULOS */
+
+section .last-visit h3{
+    font-size: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section .offers h3{
+    font-size: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+    text-align: left;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.description{
+    opacity: 0;
+    margin-top: 20px;
+    transition-property: opacity 100ms;
+}
+
+main section article:hover .description{
+    opacity: 100;
+    color: gray;
+
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: white; 
+    margin: 10px 0px;
+   
+}
+
+main section .products article{
+    transition: box-shadow 200ms;  
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: transform 150ms ;
+}
+
+main section article i:hover{
+    transform: rotate(-90deg);
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+nav {
+    display: flex;
+    justify-content:space-between;
+    padding-bottom: 10px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #FFF;
+    background-position: bottom;
+    width: 100%;
+    height: 22vw;
+    padding-top: 20px;
+    width: 100%;
+}
+footer div article{
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+footer div article i {
+    color: #104aa2;
+    transition-property: color 100ms;
+    background-position: bottom;
+}
+
+footer div article i:hover{
+    background-position: bottom;
+    color: #eac926
+}
+
+.description{
+    display: none;}
+.top-header{
+    display: flex;
+    padding: 20px;}
+
+header nav .right-navbar, .left-navbar{
+    display:none;}
+
+footer .copy {
+        font-size: 11px;
+        margin-left: 20px;
+        padding: 10px;
+        color: #676767;
+}
+
+/* REGISTER */
+
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 10px;
+    width: 50%;
+    height: 80vw;
+    
+}
+.main-data{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+}
+
+.birth-adress{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile{
+    display: flex;
+    justify-content: space-around;
+}
+
+.choose-password{
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-reset{
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-reset .submit{
+    background-color: #0044AA;
+    color:#FFF
+}
+
+.submit-reset .reset{
+    background-color: #ba0764;
+    color:#FFF
+
+}
+
+/* LOGIN */
+
+.login{
+    text-align: center;
+    padding-top: 10px;
+    height: 30vw;
+}
+ .login .login-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.login .login-form .submit{
+    background-color: #0044AA;
+    color:#FFF;
+    transition-property: background-color 150ms  ;
+}
+
+.login .login-form .submit:hover{
+    background-color:#0022aa
+}
+
+/*Mobile*/
+
+@media (max-width: 361px) {
+    .right-navbar {
+      display: none;
+    }
+    .left-navbar{
+        display: none;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .description {
+      display: none;
+    }
+    
+    footer{
+        background-color: #FFF;
+        background-position: bottom;
+        width: 100%;
+        height: 125vw;
+    }
+}
+
+/* TABLET */
+
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    div.burger-menu{
+        display: none;
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+
+    header nav .right-navbar, .left-navbar{
+        display:flex;}
+
+    main section .products article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    footer{
+        background-color: #FFF;
+        background-position: bottom;
+        width: 100%;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+    div.burger-menu{
+        display: none;
+    }
+
+    footer div {
+        display: flex;
+        padding: 10px;
+    }
+
+    .top-header .logo{
+        width: 20%;
+        background-position: left;
+    }
+
+    .top-header{
+        display: flex;
+        padding: 0;
+        align-items: center;
+    }
+
+    .top-header .form{
+        display: flex;
+        position: relative;
+
+    }
+   form .input  {
+    width: 450px;
+
+    }
+
+    form i{
+        position: relative;
+    }
+
+    .top-header p{
+            font-size: larger;
+            text-align: center;
+    }
+
+    .register{
+      display: flex;
+      flex-direction: column;
+    }
+
+    main .login{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .login .login-form{
+        display: flex;
+        width: 50vh;
+        margin: 0 auto
+    }
+        
+    .right-navbar, .left-navbar{
+        font-size: large;
+    }
+    main section .products article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
